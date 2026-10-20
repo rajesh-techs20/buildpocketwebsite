@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="BuildPocket helps you save useful webpages, organize study resources, and keep reusable code snippets in one place.">
+  <title>BuildPocket — Your knowledge, organized.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="#home" aria-label="BuildPocket home">
+      <span class="brand-icon">B</span>
+      <span>BuildPocket<span class="brand-dot">.</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#features">Features</a>
+      <a href="#preview">Preview</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="#get-started">Get started <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span class="status-dot"></span>
+          YOUR PERSONAL KNOWLEDGE VAULT
+        </div>
+
+        <h1>Everything useful.<br>One <span class="gradient-text">pocket.</span></h1>
+
+        <p class="hero-description">
+          Save the websites you love, organize your learning resources,
+          and keep your best code snippets close at hand.
+          Less searching. More building.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#get-started">
+            Explore BuildPocket <span>↗</span>
+          </a>
+          <a class="button button-secondary" href="#preview">
+            <span class="play-icon">▶</span> See the preview
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span class="check-icon">✓</span>
+          Your resources stay in your browser's local storage.
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Illustration of the BuildPocket dashboard">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+
+        <div class="floating-tag tag-top">
+          <span class="tag-symbol">✦</span> Your ideas, organized
+        </div>
+
+        <div class="app-window">
+          <div class="window-top">
+            <div class="window-dots"><i></i><i></i><i></i></div>
+            <span class="window-title">BuildPocket workspace</span>
+            <span class="window-menu">•••</span>
+          </div>
+
+          <div class="mock-app">
+            <aside class="mock-sidebar">
+              <div class="mock-logo"><span>B</span> BuildPocket</div>
+              <div class="mock-label">WORKSPACE</div>
+              <div class="mock-nav active"><span>▦</span> All resources <b>24</b></div>
+              <div class="mock-nav"><span>☆</span> Favorites <b>6</b></div>
+              <div class="mock-label">COLLECTIONS</div>
+              <div class="mock-nav"><span class="collection-dot dot-purple"></span> Web Development</div>
+              <div class="mock-nav"><span class="collection-dot dot-blue"></span> ECE & College</div>
+              <div class="mock-nav"><span class="collection-dot dot-orange"></span> Startup Ideas</div>
+              <div class="mock-nav"><span class="collection-dot dot-green"></span> DSA Practice</div>
+            </aside>
+
+            <div class="mock-content">
+              <div class="mock-welcome">
+                <div>
+                  <small>YOUR WORKSPACE</small>
+                  <h3>Your knowledge, collected.</h3>
+                </div>
+                <div class="mock-avatar">BP</div>
+              </div>
+
+              <div class="mock-search">⌕ &nbsp; Search your saved resources...</div>
+
+              <div class="mock-stats">
+                <div><span>↗</span><small>Resources</small><strong>24</strong></div>
+                <div><span>▤</span><small>Collections</small><strong>06</strong></div>
+                <div><span>⌘</span><small>Snippets</small><strong>12</strong></div>
+              </div>
+
+              <div class="mock-section-heading">
+                <strong>Recently saved</strong>
+                <span>View all →</span>
+              </div>
+
+              <div class="mock-resource">
+                <div class="resource-icon purple-icon">W</div>
+                <div class="resource-info"><strong>Modern CSS Guide</strong><small>Web Development · Article</small></div>
+                <span class="resource-star">★</span>
+              </div>
+              <div class="mock-resource">
+                <div class="resource-icon blue-icon">⌘</div>
+                <div class="resource-info"><strong>Useful JavaScript Patterns</strong><small>Web Development · Code</small></div>
+                <span class="resource-star">★</span>
+              </div>
+              <div class="mock-resource">
+                <div class="resource-icon orange-icon">E</div>
+                <div class="resource-info"><strong>Digital Electronics Notes</strong><small>ECE & College · Study</small></div>
+                <span class="resource-star">☆</span>
+              </div>
+
+              <div class="mock-code">
+                <div class="code-top"><span>⌘ &nbsp; Reusable snippet</span><span>JS</span></div>
+                <code><span class="code-purple">const</span> build = () =&gt; <span class="code-green">"something great"</span>;</code>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-tag tag-bottom">
+          <span class="tag-check">✓</span> Saved for later
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <span>MADE FOR PEOPLE WHO LOVE TO LEARN AND BUILD</span>
+      <div class="trust-items">
+        <span>⌘ Developers</span>
+        <span>▤ Students</span>
+        <span>✦ Curious minds</span>
+        <span>↗ Creators</span>
+      </div>
+    </section>
+
+    <section class="section features-section" id="features">
+      <div class="section-heading">
+        <div class="eyebrow">LESS CLUTTER. MORE CLARITY.</div>
+        <h2>Your digital brain,<br><span class="gradient-text">a little more organized.</span></h2>
+        <p>The useful things you find online deserve a home you can find again.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card feature-large">
+          <div class="feature-icon icon-violet">↗</div>
+          <span class="feature-number">01 / SAVE</span>
+          <h3>Keep the good stuff.</h3>
+          <p>Save useful webpages and links instead of losing them in endless tabs or bookmarks.</p>
+          <div class="mini-browser">
+            <div class="mini-browser-top"><i></i><i></i><i></i><span>example.com/article</span></div>
+            <div class="mini-browser-body"><span>ARTICLE SAVED</span><strong>A resource worth keeping.</strong><div class="mini-line"></div><div class="mini-line short"></div></div>
+            <div class="saved-label">✓ Saved to BuildPocket</div>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon icon-blue">▦</div>
+          <span class="feature-number">02 / ORGANIZE</span>
+          <h3>Find your flow.</h3>
+          <p>Create collections for classes, projects, coding, and ideas.</p>
+          <div class="collection-pills"><span>◈ College</span><span>⌘ Coding</span><span>✦ Ideas</span><span>＋ New collection</span></div>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon icon-orange">⌘</div>
+          <span class="feature-number">03 / REUSE</span>
+          <h3>Code, ready when you are.</h3>
+          <p>Store useful snippets with language labels. Find, copy, and reuse them when you need them.</p>
+          <div class="snippet-preview"><span>JAVASCRIPT</span><code>const keepBuilding = true;</code><small>▣ &nbsp; Copy snippet</small></div>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon icon-green">☆</div>
+          <span class="feature-number">04 / FOCUS</span>
+          <h3>Your favorites, front and center.</h3>
+          <p>Mark important resources, add notes, and search your collection instead of starting over.</p>
+          <div class="focus-preview"><span>★</span><div><strong>Project inspiration</strong><small>Favorited · Personal note added</small></div><span class="focus-check">✓</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="preview-section section" id="preview">
+      <div class="preview-copy">
+        <div class="eyebrow">BUILT FOR YOUR WORKFLOW</div>
+        <h2>From “I'll save this”<br>to <span class="gradient-text">“found it.”</span></h2>
+        <p>Keep study material, developer references, project inspiration, and reusable code in one organized workspace.</p>
+        <ul class="check-list">
+          <li><span>✓</span> Search your saved resources</li>
+          <li><span>✓</span> Organize links into collections</li>
+          <li><span>✓</span> Keep code snippets ready to copy</li>
+          <li><span>✓</span> Save locally in your browser</li>
+        </ul>
+        <a class="text-link" href="#get-started">Meet your new workspace <span>→</span></a>
+      </div>
+
+      <div class="preview-card">
+        <div class="preview-card-header"><span>YOUR COLLECTIONS</span><span class="preview-count">04 collections</span></div>
+        <div class="preview-collection"><div class="preview-collection-icon pc-purple">⌘</div><div><strong>Web Development</strong><small>HTML, CSS, JavaScript</small></div><span>08 <b>→</b></span></div>
+        <div class="preview-collection"><div class="preview-collection-icon pc-blue">▤</div><div><strong>College & ECE</strong><small>Notes, lectures, references</small></div><span>12 <b>→</b></span></div>
+        <div class="preview-collection"><div class="preview-collection-icon pc-orange">✦</div><div><strong>Startup Ideas</strong><small>Inspiration and research</small></div><span>05 <b>→</b></span></div>
+        <div class="preview-collection"><div class="preview-collection-icon pc-green">⌘</div><div><strong>Code Snippets</strong><small>Reusable code and helpers</small></div><span>12 <b>→</b></span></div>
+        <div class="preview-card-footer"><span class="preview-live-dot"></span> A calmer place for useful things</div>
+      </div>
+    </section>
+
+    <section class="steps-section section" id="how-it-works">
+      <div class="section-heading">
+        <div class="eyebrow">GET STARTED IN THREE STEPS</div>
+        <h2>Simple by design.</h2>
+        <p>No complicated setup. Just a better way to keep track of useful resources.</p>
+      </div>
+      <div class="steps-grid">
+        <article class="step-card"><div class="step-top"><span>01</span><div>↗</div></div><h3>Find something useful</h3><p>A webpage, a study resource, a coding reference, or an idea you want to revisit.</p></article>
+        <article class="step-card"><div class="step-top"><span>02</span><div>▦</div></div><h3>Save it to your pocket</h3><p>Keep a link, add it to a collection, or store a reusable code snippet.</p></article>
+        <article class="step-card"><div class="step-top"><span>03</span><div>⌕</div></div><h3>Find it when it matters</h3><p>Search, revisit, and reuse your resources from your BuildPocket workspace.</p></article>
+      </div>
+    </section>
+
+    <section class="privacy-section">
+      <div class="privacy-inner">
+        <div class="privacy-icon">⌑</div>
+        <div><div class="eyebrow">LOCAL BY DESIGN</div><h2>Your resources stay in your browser.</h2><p>BuildPocket currently uses local browser storage. Your saved resources aren't automatically synced to the cloud or across devices.</p></div>
+        <div class="privacy-badge"><span>✓</span> No cloud account required</div>
+      </div>
+    </section>
+
+    <section class="faq-section section" id="faq">
+      <div class="section-heading">
+        <div class="eyebrow">GOOD TO KNOW</div>
+        <h2>Frequently asked questions.</h2>
+      </div>
+
+      <div class="faq-list">
+        <details><summary>What is BuildPocket? <span>+</span></summary><p>BuildPocket is a browser-based knowledge organizer for saving webpages, sorting resources into collections, keeping notes, and storing reusable code snippets.</p></details>
+        <details><summary>Where is my data stored? <span>+</span></summary><p>Your data is stored locally in your browser's extension storage. It is not automatically backed up or synced across devices. Avoid clearing extension data if you want to keep your saved resources.</p></details>
+        <details><summary>Is BuildPocket available to install now? <span>+</span></summary><p>The public website is an introduction to BuildPocket. The official installation link will be added once the extension is published and its store listing is available.</p></details>
+        <details><summary>Who is BuildPocket for? <span>+</span></summary><p>Students, developers, makers, and anyone who wants to organize useful links and reusable code in one place.</p></details>
+      </div>
+    </section>
+
+    <section class="cta-section section" id="get-started">
+      <div class="cta-glow"></div>
+      <div class="eyebrow">YOUR NEXT IDEA STARTS HERE</div>
+      <h2>Stop losing useful things.<br><span class="gradient-text">Start building.</span></h2>
+      <p>Give your links, learning resources, and code snippets a place of their own.</p>
+      <a class="button button-primary" href="#home">Explore BuildPocket <span>↑</span></a>
+      <small>Official extension installation link coming after store approval.</small>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-icon">B</span><span>BuildPocket<span class="brand-dot">.</span></span></a>
+    <span>Keep what matters. Build what's next.</span>
+    <a href="#home" class="back-top">Back to top ↑</a>
+    <div class="footer-bottom">© <span id="currentYear"></span> BuildPocket. Built for curious minds.</div>
+  </footer>
+</body>
+</html>
